@@ -8,9 +8,6 @@
 
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
-#import <CoreVideo/CoreVideo.h>
-#import <CoreImage/CoreImage.h>
-#import <CoreGraphics/CoreGraphics.h>
 
 @interface ViewController () <AVCaptureVideoDataOutputSampleBufferDelegate>
 @end
@@ -210,12 +207,19 @@ typedef enum {
         if(device.position == position){
             captureDevice = device;
             if(CAMERA_FRONT){
-    //          [self forceToSwitchFlashOff];
+                //フロントカメラになった
+                if(FLASH_MODE){
+                    //フラッシュをOFFにする
+                    [self changeFlashMode:nil];
+                }
+                flashButton.enabled = NO;
+            }else{
+                flashButton.enabled = YES;
             }
             break;
         }
     }
-    
+
     //  couldn't find one on the front, so just get the default video device.
     if(!captureDevice) {
         captureDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
@@ -236,7 +240,7 @@ typedef enum {
 //シャッター音(必要な場合コメント外してください)
 //    AudioServicesPlaySystemSound(1108);
     
-    if(FLASH_MODE){
+    if(FLASH_MODE && !CAMERA_FRONT){
         dispatch_sync(flashQueue, ^{
             AVCaptureDevice *camera = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
             if ([camera hasTorch] && [camera hasFlash]){
@@ -266,7 +270,7 @@ typedef enum {
     if(!error && screenImage){
         //保存成功
         //フラッシュ消灯
-        if(FLASH_MODE){
+        if(FLASH_MODE && !CAMERA_FRONT){
             dispatch_sync(flashQueue, ^{
                 Class captureDeviceClass = NSClassFromString(@"AVCaptureDevice");
                 if(captureDeviceClass != nil){
@@ -339,16 +343,11 @@ typedef enum {
     //ビデオへの出力の画像は、BGRAで出力
     videoDataOutput.videoSettings = @{(id)kCVPixelBufferPixelFormatTypeKey : [NSNumber numberWithInt:kCVPixelFormatType_32BGRA]};
     
-    //1秒あたり4回画像をキャプチャ
+    //1秒あたり15回画像をキャプチャ
     if([camera lockForConfiguration:&error]){
         camera.activeVideoMinFrameDuration = CMTimeMake(1, 15);
         [camera unlockForConfiguration];
     }
-    
-//↓非推奨になりました↓
-//    // ビデオ入力のAVCaptureConnectionを取得
-//    AVCaptureConnection *videoConnection = [self.videoDataOutput connectionWithMediaType:AVMediaTypeVideo];
-//    videoConnection.videoMinFrameDuration = CMTimeMake(1, 4);
 }
 
 /*--------------------------------------------------------
@@ -541,7 +540,7 @@ typedef enum {
 }
 
 /*========================================================
- ; AVCaptureDevice
+ ; NSObject(NSKeyValueObserving)
  ========================================================*/
 /*--------------------------------------------------------
  ; observeValueForKeyPath : 露出のプロパティが変更された時
