@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30452D5B1B674346008639BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30452D5A1B674346008639BF /* main.m */; };
+		30452D5E1B674346008639BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30452D5D1B674346008639BF /* AppDelegate.m */; };
+		30452D611B674346008639BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30452D601B674346008639BF /* ViewController.m */; };
+		30452D661B674346008639BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30452D651B674346008639BF /* Images.xcassets */; };
+		30452D841B67459B008639BF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30452D801B67459B008639BF /* Default-568h@2x.png */; };
+		30452D851B67459B008639BF /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30452D811B67459B008639BF /* Default-667h@2x.png */; };
+		30452D861B67459B008639BF /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30452D821B67459B008639BF /* Default-736h@3x.png */; };
+		30452D871B67459B008639BF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30452D831B67459B008639BF /* Default@2x.png */; };
+		30452D891B674609008639BF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30452D881B674609008639BF /* AVFoundation.framework */; };
+		30452DD21B676F51008639BF /* exposure_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30452DD01B676F51008639BF /* exposure_circle@2x.png */; };
+		30452DD31B676F51008639BF /* focus_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30452DD11B676F51008639BF /* focus_circle@2x.png */; };
+		30515C471B6863C50040C072 /* change_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30515C431B6863C50040C072 /* change_camera@2x.png */; };
+		30515C491B6863C50040C072 /* shutter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30515C451B6863C50040C072 /* shutter@2x.png */; };
+		30515C4C1B6891100040C072 /* flash_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30515C4A1B6891100040C072 /* flash_on@2x.png */; };
+		30515C4D1B6891100040C072 /* flash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30515C4B1B6891100040C072 /* flash@2x.png */; };
+		30515C4F1B68AC2B0040C072 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 30515C4E1B68AC2B0040C072 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30452D551B674346008639BF /* NKCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NKCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30452D591B674346008639BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30452D5A1B674346008639BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		30452D5C1B674346008639BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		30452D5D1B674346008639BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		30452D5F1B674346008639BF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		30452D601B674346008639BF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		30452D651B674346008639BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		30452D801B67459B008639BF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		30452D811B67459B008639BF /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		30452D821B67459B008639BF /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		30452D831B67459B008639BF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		30452D881B674609008639BF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		30452DD01B676F51008639BF /* exposure_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exposure_circle@2x.png"; sourceTree = "<group>"; };
+		30452DD11B676F51008639BF /* focus_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "focus_circle@2x.png"; sourceTree = "<group>"; };
+		30515C431B6863C50040C072 /* change_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "change_camera@2x.png"; sourceTree = "<group>"; };
+		30515C451B6863C50040C072 /* shutter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shutter@2x.png"; sourceTree = "<group>"; };
+		30515C4A1B6891100040C072 /* flash_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flash_on@2x.png"; sourceTree = "<group>"; };
+		30515C4B1B6891100040C072 /* flash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flash@2x.png"; sourceTree = "<group>"; };
+		30515C4E1B68AC2B0040C072 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30452D521B674346008639BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30452D891B674609008639BF /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30452D4C1B674346008639BF = {
+			isa = PBXGroup;
+			children = (
+				30452D571B674346008639BF /* NKCamera */,
+				30452D8A1B67461A008639BF /* Frameworks */,
+				30452D561B674346008639BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30452D561B674346008639BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30452D551B674346008639BF /* NKCamera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30452D571B674346008639BF /* NKCamera */ = {
+			isa = PBXGroup;
+			children = (
+				30452D5C1B674346008639BF /* AppDelegate.h */,
+				30452D5D1B674346008639BF /* AppDelegate.m */,
+				30452D5F1B674346008639BF /* ViewController.h */,
+				30452D601B674346008639BF /* ViewController.m */,
+				30515C4E1B68AC2B0040C072 /* README.md */,
+				30452D7E1B67459B008639BF /* Image */,
+				30452D581B674346008639BF /* Supporting Files */,
+			);
+			path = NKCamera;
+			sourceTree = "<group>";
+		};
+		30452D581B674346008639BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30452D651B674346008639BF /* Images.xcassets */,
+				30452D591B674346008639BF /* Info.plist */,
+				30452D5A1B674346008639BF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30452D7E1B67459B008639BF /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				30515C4A1B6891100040C072 /* flash_on@2x.png */,
+				30515C4B1B6891100040C072 /* flash@2x.png */,
+				30515C431B6863C50040C072 /* change_camera@2x.png */,
+				30515C451B6863C50040C072 /* shutter@2x.png */,
+				30452DD01B676F51008639BF /* exposure_circle@2x.png */,
+				30452DD11B676F51008639BF /* focus_circle@2x.png */,
+				30452D7F1B67459B008639BF /* LaunchScreen */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		30452D7F1B67459B008639BF /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				30452D801B67459B008639BF /* Default-568h@2x.png */,
+				30452D811B67459B008639BF /* Default-667h@2x.png */,
+				30452D821B67459B008639BF /* Default-736h@3x.png */,
+				30452D831B67459B008639BF /* Default@2x.png */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		30452D8A1B67461A008639BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30452D881B674609008639BF /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			path = NKCamera;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30452D541B674346008639BF /* NKCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30452D781B674346008639BF /* Build configuration list for PBXNativeTarget "NKCamera" */;
+			buildPhases = (
+				30452D511B674346008639BF /* Sources */,
+				30452D521B674346008639BF /* Frameworks */,
+				30452D531B674346008639BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NKCamera;
+			productName = NKCamera;
+			productReference = 30452D551B674346008639BF /* NKCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30452D4D1B674346008639BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "nanoka____";
+				TargetAttributes = {
+					30452D541B674346008639BF = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 30452D501B674346008639BF /* Build configuration list for PBXProject "NKCamera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30452D4C1B674346008639BF;
+			productRefGroup = 30452D561B674346008639BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30452D541B674346008639BF /* NKCamera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30452D531B674346008639BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30452D661B674346008639BF /* Images.xcassets in Resources */,
+				30452DD21B676F51008639BF /* exposure_circle@2x.png in Resources */,
+				30515C4C1B6891100040C072 /* flash_on@2x.png in Resources */,
+				30452D851B67459B008639BF /* Default-667h@2x.png in Resources */,
+				30452D871B67459B008639BF /* Default@2x.png in Resources */,
+				30452D841B67459B008639BF /* Default-568h@2x.png in Resources */,
+				30515C491B6863C50040C072 /* shutter@2x.png in Resources */,
+				30515C4D1B6891100040C072 /* flash@2x.png in Resources */,
+				30515C471B6863C50040C072 /* change_camera@2x.png in Resources */,
+				30452DD31B676F51008639BF /* focus_circle@2x.png in Resources */,
+				30452D861B67459B008639BF /* Default-736h@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30452D511B674346008639BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30452D611B674346008639BF /* ViewController.m in Sources */,
+				30452D5E1B674346008639BF /* AppDelegate.m in Sources */,
+				30515C4F1B68AC2B0040C072 /* README.md in Sources */,
+				30452D5B1B674346008639BF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		30452D761B674346008639BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		30452D771B674346008639BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30452D791B674346008639BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = NKCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		30452D7A1B674346008639BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = NKCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30452D501B674346008639BF /* Build configuration list for PBXProject "NKCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30452D761B674346008639BF /* Debug */,
+				30452D771B674346008639BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30452D781B674346008639BF /* Build configuration list for PBXNativeTarget "NKCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30452D791B674346008639BF /* Debug */,
+				30452D7A1B674346008639BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30452D4D1B674346008639BF /* Project object */;
+}
