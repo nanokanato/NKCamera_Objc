@@ -4,7 +4,8 @@ http://nanoka.wpcloud.net
 
 機能
 -----
-カメラ機能でよく使うものをサンプルとしてまとめました  
+Objective-cでのカメラ機能でよく使うものをサンプルとしてまとめました  
+Swiftでの実装はこちら:https://github.com/nanokanato/NKCamera_Swift  
   
 ・露出を合わせる  
 ・フォーカスを合わせる  
