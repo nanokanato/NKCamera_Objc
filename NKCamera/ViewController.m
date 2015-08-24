@@ -93,7 +93,7 @@ typedef enum {
                                                                        options:NSKeyValueObservingOptionNew
                                                                        context:nil];
     
-    //マルチタスクから復帰したときに呼ばれる
+    //バックグラウンドになった時に呼ばれる
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(applicationBecomeActive)
                                                  name:UIApplicationDidBecomeActiveNotification
